@@ -1,0 +1,16 @@
+{% extends 'form_base.html' %}
+{% import "bootstrap/wtf.html" as wtf %}
+{% block title %}Hello World{% endblock %}
+{% block page_content %}
+
+<div class="page-header">
+<form action="/pj6/ok" method="get">
+    <h1>Total Ram: {{ total_ram }}</h1>
+    <h1>Used Ram: {{ used_ram }}</h1>
+    <h1>CPU: {{ cpu }}%</h1>
+</form>
+</div>
+
+
+{% endblock %}
+
